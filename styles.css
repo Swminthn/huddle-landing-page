@@ -1,0 +1,143 @@
+:root{
+    --violet: rgb(103, 75, 175);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+@import url("https://fonts.google.com/specimen/Poppins");
+@import url("https://fonts.google.com/specimen/Open+Sans");
+
+@font-face {
+    font-family: font1;
+    src: url(./Assets/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(./Assets/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    font-size: 16px;
+    background-color: var(--violet);
+    
+}
+.introduction-section{
+    background-image: url(./images/bg-desktop.svg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.flex-container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding:60px 80px 0px 80px;
+    
+}
+.flex-item1{
+    flex: 50%;
+    margin: auto;
+    padding:50px ;
+    justify-self: baseline;
+    
+}
+.flex-item1 img{
+    width: 100%;
+}
+.flex-item2{
+    flex: 50%;
+    margin: auto;
+    padding: 0px 80px 80px 50px;
+    justify-self: baseline;
+}
+header img{
+    padding: 50px 50px 0px 50px;
+}
+h1{
+    font-family: font1;
+    color:white;
+    font-weight: 400;
+    font-size: 3.5rem;
+    
+}
+p{
+    font-family: font2;
+    color:white;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding:20px 0px 20px 0px;
+}
+button{
+    border:none;
+    padding:20px 65px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    background-color: var(--Soft-Magenta);
+    color:white;
+    font-weight: 600;
+}
+button:hover{
+    background-color: white;
+    cursor: pointer;
+    color:var(--violet);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: flex-end;
+    padding:50px;
+}
+.social-media i{
+ font-size: 2.0rem;
+ color:white;
+ padding:10px;
+ border: 3px solid white;
+ border-radius:30px;
+ margin: 5px;
+ text-align: center;
+}
+.social-media i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.social-media i:hover:nth-child(1){
+    color:#4267B2;
+}
+.social-media i:hover:nth-child(2){
+    color:#1DA1F2;
+}
+.social-media i:hover:nth-child(3){
+    color:  #E4405F;
+}
+
+
+@media (max-width:1400px) {
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+p{
+    text-align: center;
+ 
+}
+.flex-item1{
+    padding: unset;
+}
+.flex-item2{
+    padding: unset;
+   text-align: center;
+}
+
+}
